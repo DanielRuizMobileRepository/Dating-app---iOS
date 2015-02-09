@@ -26,6 +26,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="52u-U7-FPw"/>
+                    <connections>
+                        <segue destination="UyU-r5-N4L" kind="show" identifier="showLoginFromInbox" id="9xc-yP-6gq"/>
+                        <segue destination="Hbg-6u-AzA" kind="show" id="Svs-sG-92P"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IhG-po-1X0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,6 +73,70 @@
             </objects>
             <point key="canvasLocation" x="1275" y="-245"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="71S-C7-oGn">
+            <objects>
+                <viewController id="UyU-r5-N4L" customClass="LoginViewController" customModule="Time_Capsule" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0uU-gG-chf"/>
+                        <viewControllerLayoutGuide type="bottom" id="OYz-oG-5eF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GL3-cj-h7Q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcv-T8-KTN">
+                                <rect key="frame" x="264" y="94" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kAH-ye-0lg">
+                                <rect key="frame" x="16" y="146" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6p3-3b-vM0">
+                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVg-Y3-fZP">
+                                <rect key="frame" x="269" y="346" width="46" height="30"/>
+                                <state key="normal" title="Ok">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="UyU-r5-N4L" eventType="touchUpInside" id="IGW-Dj-K0n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKI-jV-Mnz">
+                                <rect key="frame" x="264" y="486" width="58" height="30"/>
+                                <state key="normal" title="Signup">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eS8-LJ-ZE1" kind="show" id="PUM-e3-R9o"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggJ-bG-HRo">
+                                <rect key="frame" x="250" y="232" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordField" destination="6p3-3b-vM0" id="ZDQ-S9-mrp"/>
+                        <outlet property="usernameField" destination="kAH-ye-0lg" id="tLB-Ee-eQb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7c-Lw-u1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566" y="509"/>
+        </scene>
         <!--Item-->
         <scene sceneID="DeX-Ia-vfh">
             <objects>
@@ -86,7 +154,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zrc-EI-n6v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1256" y="758"/>
+            <point key="canvasLocation" x="1242" y="1354"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8xM-ve-TK4">
@@ -105,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tda-Zu-h2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2046" y="772"/>
+            <point key="canvasLocation" x="2098" y="1354"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5RE-NX-SKw">
@@ -126,6 +194,24 @@
             <point key="canvasLocation" x="2850" y="-241"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="CVc-Uy-7Kf">
+            <objects>
+                <viewController id="eS8-LJ-ZE1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RYA-bC-EBi"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Gi-ec-iN6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="seF-wL-uyd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5c-JE-vrT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2240" y="509"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="o5q-xe-nS2">
             <objects>
                 <viewController id="BBT-9y-Yoh" sceneMemberID="viewController">
@@ -141,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sxu-dX-LcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2848" y="451"/>
+            <point key="canvasLocation" x="3044" y="839"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uJq-3t-bGS">
@@ -159,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xyv-x4-m4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2840" y="1129"/>
+            <point key="canvasLocation" x="3044" y="1567"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="c1Y-Rx-Gjj">
@@ -177,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rA3-hK-vfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2840" y="1819"/>
+            <point key="canvasLocation" x="3044" y="2285"/>
         </scene>
     </scenes>
 </document>

@@ -193,10 +193,10 @@
             </objects>
             <point key="canvasLocation" x="2850" y="-241"/>
         </scene>
-        <!--View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="CVc-Uy-7Kf">
             <objects>
-                <viewController id="eS8-LJ-ZE1" sceneMemberID="viewController">
+                <viewController id="eS8-LJ-ZE1" customClass="SignupViewController" customModule="Time_Capsule" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RYA-bC-EBi"/>
                         <viewControllerLayoutGuide type="bottom" id="3Gi-ec-iN6"/>
@@ -204,8 +204,45 @@
                     <view key="view" contentMode="scaleToFill" id="seF-wL-uyd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfn-Xe-YZF">
+                                <rect key="frame" x="273" y="460" width="50" height="30"/>
+                                <state key="normal" title="Signup">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signup:" destination="eS8-LJ-ZE1" eventType="touchUpInside" id="2e6-js-afD"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EMs-Qh-0Vj">
+                                <rect key="frame" x="16" y="138" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XvP-q0-FWQ">
+                                <rect key="frame" x="16" y="198" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Repeat" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y2w-YA-vXv">
+                                <rect key="frame" x="16" y="265" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QDX-gg-RxQ">
+                                <rect key="frame" x="16" y="369" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="QDX-gg-RxQ" id="9VL-JA-4Ri"/>
+                        <outlet property="passwordField" destination="XvP-q0-FWQ" id="Pzf-ap-Agd"/>
+                        <outlet property="passwordRepeatField" destination="Y2w-YA-vXv" id="wdd-EX-oer"/>
+                        <outlet property="usernameField" destination="EMs-Qh-0Vj" id="CUO-LV-xIp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p5c-JE-vrT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

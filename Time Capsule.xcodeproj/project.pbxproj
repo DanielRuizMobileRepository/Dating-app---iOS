@@ -22,6 +22,7 @@
 		941DA6A01A861114003D2C06 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DA6961A861114003D2C06 /* Security.framework */; };
 		941DA6A11A861114003D2C06 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DA6971A861114003D2C06 /* StoreKit.framework */; };
 		941DA6A21A861114003D2C06 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DA6981A861114003D2C06 /* SystemConfiguration.framework */; };
+		94D860D01A89E00E0094B324 /* NotepadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D860CF1A89E00E0094B324 /* NotepadViewController.swift */; };
 		94ECF0281A71FB8000E70367 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECF0271A71FB8000E70367 /* AppDelegate.swift */; };
 		94ECF02B1A71FB8000E70367 /* Time_Capsule.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94ECF0291A71FB8000E70367 /* Time_Capsule.xcdatamodeld */; };
 		94ECF0301A71FB8000E70367 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94ECF02E1A71FB8000E70367 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		941DA6971A861114003D2C06 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		941DA6981A861114003D2C06 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		941DA6A31A8612BF003D2C06 /* Time Capsule-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Time Capsule-Bridging-Header.h"; sourceTree = "<group>"; };
+		94D860CF1A89E00E0094B324 /* NotepadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotepadViewController.swift; sourceTree = "<group>"; };
 		94ECF0221A71FB7F00E70367 /* Time Capsule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Capsule.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94ECF0261A71FB8000E70367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94ECF0271A71FB8000E70367 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				94ECF0271A71FB8000E70367 /* AppDelegate.swift */,
 				94ECF02E1A71FB8000E70367 /* Main.storyboard */,
+				94D860CF1A89E00E0094B324 /* NotepadViewController.swift */,
 				94ECF0311A71FB8000E70367 /* Images.xcassets */,
 				94ECF0331A71FB8000E70367 /* LaunchScreen.xib */,
 				94ECF0291A71FB8000E70367 /* Time_Capsule.xcdatamodeld */,
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9416B15E1A8876CB00DF8B06 /* LoginViewController.swift in Sources */,
+				94D860D01A89E00E0094B324 /* NotepadViewController.swift in Sources */,
 				94ECF02B1A71FB8000E70367 /* Time_Capsule.xcdatamodeld in Sources */,
 				9416B1601A8876DB00DF8B06 /* SignupViewController.swift in Sources */,
 				94ECF0281A71FB8000E70367 /* AppDelegate.swift in Sources */,
